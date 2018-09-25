@@ -11,8 +11,20 @@ class MyApp extends StatelessWidget {
         appBar: new AppBar(
           title: new Text('Flutter is Cool!'),
           leading: new Icon(
-            Icons.camera_front
-          )
+            Icons.cake
+          ),
+          actions: <Widget>[
+            new IconButton(
+                icon: new Icon(Icons.pie_chart),
+                tooltip: 'Wow!',
+                onPressed: () => {},
+            ),
+            new IconButton(
+              icon: new Icon(Icons.photo_album),
+              tooltip: 'Snap!',
+              onPressed: () => {},
+            ),
+          ]
         ),
         body: new Center(
           child: new Text('Hello World!'),
